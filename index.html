@@ -11,33 +11,93 @@
     </header>
 
     <nav>
-        <a href="">Inicio</a>
-        <a href="/acercade.html">Acerca de mí</a>
+        <a href="#">Inicio</a>
+        <a href="#">Acerca de mí</a>
+        <a href="#">Proyectos</a>
+        <a href="#">Contacto</a>
     </nav>
+    <!-- <img src="/img/hero.jpg" alt=""> -->
     <section>
         <h2>Desarrollador Frontend</h2>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-location" width="80" height="80" viewBox="0 0 24 24" stroke-width="2" stroke="#00bfd8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M21 3l-6.5 18a0.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a0.55 .55 0 0 1 0 -1l18 -6.5" />
+        </svg>
         <p>México, México</p>
+
+        <a href="#">Contactar</a>
     </section>
 
     <main>
-        <h2>Mis proyectos</h2>
+        <h2>Mis Servicios</h2>
         <section>
-            <h3>HTML 5</h3>
+            <h3>Desarrollo Web</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-browser" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <rect x="4" y="4" width="16" height="16" rx="1" />
+                <line x1="4" y1="8" x2="20" y2="8" />
+                <line x1="8" y1="4" x2="8" y2="8" />
+            </svg>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, temporibus!</p>
         </section>
         
         <section>
-            <h3>CSS3</h3>
+            <h3>Desarrollo mobile</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-mobile" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <rect x="7" y="4" width="10" height="16" rx="1" />
+                <line x1="11" y1="5" x2="13" y2="5" />
+                <line x1="12" y1="17" x2="12" y2="17.01" />
+            </svg>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, temporibus!</p>
         </section>
         <section>
-            <h3>Javascript</h3>
+            <h3>E-commerce</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="6" cy="19" r="2" />
+                <circle cx="17" cy="19" r="2" />
+                <path d="M17 17h-11v-14h-2" />
+                <path d="M6 5l14 1l-1 7h-13" />
+              </svg>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, temporibus!</p>
         </section>
     </main>
     
     <section>
         <h2>Contacto</h2>
+        <form action="">
+            <!-- fielset nos permite agrupar ua serie de diferentes campos -->
+            <fieldset>
+                <!-- Dar instrucciones al usuario -->
+                <legend>Trabajemos juntos</legend>
+                
+                <div>
+                    <label for="">Nombre</label>
+                    <input type="text" placeholder="Nombre" >
+                </div>
+                <div>
+                    <label for="">Teléfono</label>
+                    <input type="tel" placeholder="Teléfono" >
+                </div>
+                
+                <div>
+                    <label for="">Correo</label>
+                    <input type="email" placeholder="Email">
+                </div>
+                
+                <div>
+                    <label for="">Mensaje</label>
+                    <textarea></textarea>
+                </div>
+                
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+
+            </fieldset>
+        </form>
     </section>
     
     <footer>
