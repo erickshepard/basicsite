@@ -4,21 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erick Martinez | Desarrollador Frontend</title>
+    <!-- Normalize -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Estilos -->
+    <link rel="preload" href="css/main.css" as="style">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header>
-        <h1>Erick Martinez</h1>
+        <h1 class="titulo">Erick Martinez <span>Frontend Dev</span></h1>
     </header>
-
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Acerca de mí</a>
-        <a href="#">Proyectos</a>
-        <a href="#">Contacto</a>
-    </nav>
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="#">Inicio</a>
+            <a href="#">Acerca de mí</a>
+            <a href="#">Proyectos</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </div>
+    
     <!-- <img src="/img/hero.jpg" alt=""> -->
     <section>
-        <h2>Desarrollador Frontend</h2>
+        <h2 class="titulo">Desarrollador <span>Frontend</span> </h2>
         
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-location" width="80" height="80" viewBox="0 0 24 24" stroke-width="2" stroke="#00bfd8" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
