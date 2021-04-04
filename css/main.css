@@ -12,6 +12,11 @@
 */
 html{
     font-size: 62.5%;
+    /* SOlucionar problema de cajas */
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
 }
 body{
     font-size: 16px; /* 1rem =  10px*/
@@ -83,4 +88,11 @@ body{
 /*  */
 @media (min-width: 1400px){
     
+}
+.hero{
+    background-image: url('../img/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 41rem;
+    padding: 2rem;
 }
