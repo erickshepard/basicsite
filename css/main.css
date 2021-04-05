@@ -1,9 +1,11 @@
+/* Globales */
 :root{
     --blanco:#FFFFFF;
     --black: #212121;
     --primario: #FFC107;
     --secundario: #0097A7;
     --gris: #757575;
+    --grisClaro: #DFE9F3;
 
     /* --fuente-principal: 3.8rem; */
 }
@@ -13,27 +15,18 @@
 html{
     font-size: 62.5%;
     /* SOlucionar problema de cajas */
-    box-sizing: border-box;
+    box-sizing: border-box; /* Hack para box model */
 }
+/* el sector de * selecciona todo | :after(no existe como tal, es un pseudoelemento)
+ es para poner elementos despues */
 *, *:before, *:after{
     box-sizing: inherit;
 }
 body{
     font-size: 16px; /* 1rem =  10px*/
-    font-family: 'Nunito', sans-serif;
-
-}
-/* */
-
-.titulo{
-    text-align: center;
-    font-size: 3.8rem;
-    /* font-weight: 400; */
-    /* font-size: var(--fuente-principal);
-    color: var(--primario); */
-}
-.titulo span{
-    font-size: 2rem;
+    font-family: 'Nunito', sans-serif; /* Tipografia para todo el documento*/
+    /* Para utilizar degradados en css se hace con: */
+    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%);
 }
 .contenedor{
     max-width: 120rem;
@@ -44,6 +37,59 @@ body{
     margin-bottom: 0;
     margin-left: auto; */
 }
+
+.boton{
+    background-color: var(--secundario);
+    text-decoration: none;
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    /* font-weight: bold o 700; es para poner en negritas */
+    font-weight: bold;
+    width: 90%;
+    /* Centrar textos */
+    text-align: center;
+}
+
+@media (min-width: 768px){
+    .boton{
+        width: auto;
+    }
+}
+
+/* Tipografia */
+/* Definir reglas para la tipografia */
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+h1, h2, h3{
+    text-align: center;
+}
+/* Titulos */
+
+/* .titulo{
+    text-align: center;
+    font-size: 3.8rem;
+    font-weight: 400 o bold; 
+    font-size: var(--fuente-principal);
+    color: var(--primario); 
+} */
+
+
+.titulo span{
+    font-size: 2rem;
+}
+
+/* Navegación */
 .nav-bg{
     background-color: var(--secundario);
 }
@@ -89,10 +135,46 @@ body{
 @media (min-width: 1400px){
     
 }
+/* Hero */
 .hero{
     background-image: url('../img/hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 41rem;
-    padding: 2rem;
+    /* padding: 2rem; */
+
+    position: relative;
+}
+.contenido-hero{
+    position: absolute;
+    /* Anterior */
+    background-color: rgba(0, 0, 0, .5); 
+    /* Nueva */
+    background-color: rgb( 0 0 0 / 60%);
+    width: 100%;
+    height: 100%;
+    /* top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0; */
+
+    /* Para alinear tanto vertical como horizontalmente */
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* Cuando se utiliza column,para alinear horizontalmente  se utiliza  align-items */
+    align-items: center;
+    /* Para alinear verticalmente, */
+    justify-content: center;
+}
+
+.contenido-hero h2,
+.contenido-hero p{
+    color: var(--blanco);
+}
+
+.contenido-hero .ubicacion{
+    display: flex;
+    /* Cuando flex-direction esta en row, align-item alinea verticalmente */
+    align-items: flex-end;
 }
