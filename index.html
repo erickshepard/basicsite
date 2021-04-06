@@ -29,7 +29,6 @@
     
     <section class="hero">
         <div class="contenido-hero">
-
             <h2 >Desarrollador <span>Frontend</span> </h2>
             <div class="ubicacion">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -41,86 +40,99 @@
                     México, México
                 </p>
             </div>
-            
-            
 
             <a class="boton" href="#">Contactar</a>
         </div> <!-- .contenido-hero-->
         
     </section>
 
-    <main class="contenedor">
+    <main class="contenedor sombra">
         <h2>Mis Servicios</h2>
-        <section>
-            <h3>Desarrollo Web</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-browser" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <rect x="4" y="4" width="16" height="16" rx="1" />
-                <line x1="4" y1="8" x2="20" y2="8" />
-                <line x1="8" y1="4" x2="8" y2="8" />
-            </svg>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, temporibus!</p>
-        </section>
+        <div class="servicios">
+            <section class="servicio">
+                <h3>Desarrollo Web</h3>
+
+                <div class="iconos">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-browser" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="4" y="4" width="16" height="16" rx="1" />
+                        <line x1="4" y1="8" x2="20" y2="8" />
+                        <line x1="8" y1="4" x2="8" y2="8" />
+                    </svg>
+                </div>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, temporibus!</p>
+            </section>
+            
+            <section class="servicio">
+                <h3>Desarrollo mobile</h3>
+                <div class="iconos">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-mobile" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="7" y="4" width="10" height="16" rx="1" />
+                        <line x1="11" y1="5" x2="13" y2="5" />
+                        <line x1="12" y1="17" x2="12" y2="17.01" />
+                    </svg>
+                </div>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, temporibus!</p>
+            </section>
+            <section class="servicio">
+                <h3>E-commerce</h3>
+                <div class="iconos">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="6" cy="19" r="2" />
+                        <circle cx="17" cy="19" r="2" />
+                        <path d="M17 17h-11v-14h-2" />
+                        <path d="M6 5l14 1l-1 7h-13" />
+                      </svg>
+                </div>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, temporibus!</p>
+            </section>
+        </div>
         
+    
+    
         <section>
-            <h3>Desarrollo mobile</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-mobile" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <rect x="7" y="4" width="10" height="16" rx="1" />
-                <line x1="11" y1="5" x2="13" y2="5" />
-                <line x1="12" y1="17" x2="12" y2="17.01" />
-            </svg>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, temporibus!</p>
-        </section>
-        <section>
-            <h3>E-commerce</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <circle cx="6" cy="19" r="2" />
-                <circle cx="17" cy="19" r="2" />
-                <path d="M17 17h-11v-14h-2" />
-                <path d="M6 5l14 1l-1 7h-13" />
-              </svg>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, temporibus!</p>
+            <h2>Contacto</h2>
+            <form action="" class="formulario">
+                <!-- fielset nos permite agrupar ua serie de diferentes campos -->
+                <fieldset>
+                    <!-- Dar instrucciones al usuario -->
+                    <legend>Trabajemos juntos</legend>
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label for="">Nombre</label>
+                            <input class="input-text" type="text" placeholder="Nombre" >
+                        </div>
+                        <div class="campo">
+                            <label for="">Teléfono</label>
+                            <input class="input-text" type="tel" placeholder="Teléfono" >
+                        </div>
+                        
+                        <div class="campo">
+                            <label for="">Correo</label>
+                            <input class="input-text" type="email" placeholder="Email">
+                        </div>
+                        
+                        <div class="campo">
+                            <label for="">Mensaje</label>
+                            <textarea class="input-text"></textarea>
+                        </div>
+                        
+                        
+                    </div> <!--.contenedor-campos-->
+                    <div class="alinear-derecha flex">
+                        <input  class="boton w-100" type="submit" value="Enviar">
+                    </div>
+
+                </fieldset>
+            </form>
         </section>
     </main>
-    
-    <section>
-        <h2>Contacto</h2>
-        <form action="">
-            <!-- fielset nos permite agrupar ua serie de diferentes campos -->
-            <fieldset>
-                <!-- Dar instrucciones al usuario -->
-                <legend>Trabajemos juntos</legend>
-                
-                <div>
-                    <label for="">Nombre</label>
-                    <input type="text" placeholder="Nombre" >
-                </div>
-                <div>
-                    <label for="">Teléfono</label>
-                    <input type="tel" placeholder="Teléfono" >
-                </div>
-                
-                <div>
-                    <label for="">Correo</label>
-                    <input type="email" placeholder="Email">
-                </div>
-                
-                <div>
-                    <label for="">Mensaje</label>
-                    <textarea></textarea>
-                </div>
-                
-                <div>
-                    <input type="submit" value="Enviar">
-                </div>
-
-            </fieldset>
-        </form>
-    </section>
-    
-    <footer>
+    <footer class="footer">
         <p>Todos los derechos reservados. Erick Martinez</p>
     </footer>
     
